@@ -1,0 +1,6 @@
+*.iso
+*.7z
+*.url
+work/
+__pycache__/
+*.pyc
