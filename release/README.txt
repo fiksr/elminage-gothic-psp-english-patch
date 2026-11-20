@@ -15,7 +15,14 @@ Required Source ISO (unmodified Japanese UMD dump):
 How to Patch (Windows):
   1. Drag and drop your clean Japanese ISO onto apply_patch.bat.
   2. It will create "<ISO name> [EN].iso" next to your original ISO.
-  3. Boot the patched ISO in PPSSPP or on PSP/Vita.
+  3. Boot the patched ISO in PPSSPP or on PSP / PS Vita (Adrenaline).
+
+How to Play on Real PSP / PS Vita (Adrenaline):
+  - Requires Custom Firmware (ARK-4, PRO-C, or LME) on PSP, or Adrenaline on Vita.
+  - PSP: Copy patched ISO to ms0:/ISO/Elminage_Gothic_EN.iso
+  - PS Vita (Adrenaline): Copy patched ISO to ux0:pspemu/ISO/Elminage_Gothic_EN.iso
+  - Launch from Game -> Memory Stick on the XMB.
+  - If needed, set UMD ISO MODE to Inferno in the VSH menu (SELECT on XMB).
 
 Important Notes:
   - Data Install: Select NO if prompted for Data Install. The optional

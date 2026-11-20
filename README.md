@@ -15,7 +15,17 @@ Everything needed to patch your own Japanese ISO is in the [`release/`](release/
    - **SHA-1:** `746BA98F3E4D0D47D925D373F04258092E0D3CE1`
 2. Drag and drop your Japanese `.iso` onto `release/apply_patch.bat`.
 3. It will create `<ISO name> [EN].iso` next to your original file.
-4. Boot the patched ISO in PPSSPP or on real PSP / PS Vita (Adrenaline) hardware.
+4. Boot the patched ISO in PPSSPP or on real PSP / PS Vita (Adrenaline) hardware (see below).
+
+## How to Play on Real PSP / PS Vita (Adrenaline)
+
+- **Requirements:** Custom Firmware (ARK-4, PRO-C, or LME) on PSP, or Adrenaline on PS Vita. Stock firmware cannot boot patched ISOs or decrypted `EBOOT.BIN`.
+- **Install path:**
+  - **PSP:** Copy the patched `.iso` to `ms0:/ISO/Elminage_Gothic_EN.iso` (create the `ISO` folder on the root of your Memory Stick if it doesn't exist).
+  - **PS Vita (Adrenaline):** Copy the patched `.iso` to `ux0:pspemu/ISO/Elminage_Gothic_EN.iso`.
+- **Launch:** Open **Game → Memory Stick** on the XMB and launch *Elminage Gothic*.
+- **ISO Driver:** If the game fails to boot on CFW, press `SELECT` on the XMB to open the VSH menu and set **UMD ISO MODE** to **Inferno**.
+- **Hardware note:** The patched `EBOOT.BIN` adds ~320 KB of extra runtime memory (relocated strings + `Scenario.bin` + inline prompt table). So far this patch has been tested in PPSSPP and has not yet been verified on real PSP-1000/2000/3000 hardware.
 
 ## Important Notes
 
